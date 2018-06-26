@@ -60,11 +60,11 @@ public class Board extends JPanel  {
                   if (ballX - ballRadius < 0) {
                      dx = -dx;
                      ballX = ballRadius;
-                     player1.deletePoint();
+                     player2.addPoint();
                   } else if (ballX + ballRadius > B_WIDTH) {
                      dx = -dx;
                      ballX = B_WIDTH - ballRadius;
-                     player2.deletePoint();
+                     player1.addPoint();
                   }
                   if (ballY - ballRadius < 0) {
                      dy = -dy;
@@ -149,12 +149,10 @@ public class Board extends JPanel  {
         } 
         public void checkCollisions() { //check collision with the bounds of the window and with the players
         	if((ballX<player1.getX()+helper1 && ballX+BSIZE>player1.getX() && ballY<player1.getY()+PHEIGHT && ballY+BSIZE>player1.getY())){
-        		player1.addPoint();
         		dx = -dx; 
                 ballX = ballRadius+ helper1; 
         	}
         	if(ballX+BSIZE>player2.getX() && ballY<player2.getY()+PHEIGHT && ballY+BSIZE>player2.getY()) {
-        		player2.addPoint();
         		 dx = -dx;
                  ballX = B_WIDTH - helper2-BSIZE;   
         	}}
