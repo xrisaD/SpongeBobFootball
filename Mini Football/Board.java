@@ -168,8 +168,7 @@ public class Board extends JPanel  {
         		}else if (id == KeyEvent.VK_DOWN){
         			down = true;
                 }	 
-        		update();
-        		repaint(); 		
+        		update();		
         	}
         	public void keyReleased(KeyEvent e){
         		int id = e.getKeyCode();
@@ -183,7 +182,6 @@ public class Board extends JPanel  {
         			down = false;
         		}
         		update();
-            	repaint();
         		}
         	}
 }
