@@ -1,4 +1,4 @@
-Run:java Starter 
+Run: java Starter 
 
 Choose players:
 
