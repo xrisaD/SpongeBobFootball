@@ -1,2 +1,2 @@
-# Xprojects
-Simple projects
+Run:java Starter
+Choose players:
